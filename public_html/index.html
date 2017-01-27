@@ -9,17 +9,42 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+             <script language="javascript" type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+        <script language="javascript" type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
     </head>
     <body>
+       <div id="topBar">
+            <a href ="#" id="load_home"> HOME </a>
+        </div>
+        <div id ="content">        
+        </div>
+        
+        
         <script>
-            function onDeviceReady() {
-              if (navigator.connection.type === Connection.NONE) {
-                navigator.notification.alert('An internet connection is required to continue');
-              } else {
-                window.location="http://www.google.com";
-              }
-            }
-            document.addEventListener("deviceready", onDeviceReady, false);
+        $(document).ready( function() {
+            //$.ajaxSetup({
+            //    headers: { "origin": "prepbaseballreport.com" }
+            //    });
+        
+            console.log('loading home');
+            $("#load_home").on("click",loader);
+            console.log('registered event');
+        }
+        );
+        
+        function loader(event){
+            console.log('attempting to load');
+            try{
+                    $("#content").load("http://www.prepbaseballreport.com");
+                } 
+            catch(err){
+                    console.log('an error occurred');
+                    console.log(err.toString());
+                }
+        };
+        
         </script>
+       
     </body>
 </html>
