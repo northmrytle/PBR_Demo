@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "net.northmyrtle.vms"
+        id        = "net.northmyrtle.pbr_demo"
         version   = "1.0.0">
-    <name>NMM VMS</name>
+    <name>PBR Demo</name>
 
     <description>
-        Vessel Monitoring System
+        PBR Demo App
     </description>
 
     <author href="http://www.northmyrtle.net" email="support@northmyrtle.net">
-        Northmyrtle Marine 
+        Northmyrtle Associates LLC
     </author>
     
     <!-- device required so we can detect if we are using iOS -->
