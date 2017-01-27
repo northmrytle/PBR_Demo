@@ -11,6 +11,15 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <script>
+            function onDeviceReady() {
+              if (navigator.connection.type === Connection.NONE) {
+                navigator.notification.alert('An internet connection is required to continue');
+              } else {
+                window.location="http://www.myapp.com";
+              }
+            }
+            document.addEventListener("deviceready", onDeviceReady, false);
+        </script>
     </body>
 </html>
