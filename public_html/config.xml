@@ -50,7 +50,7 @@
     <icon src="res/icon/ios/icon-72-2x.png"     gap:platform="ios"  width="144" height="144" />
     
     <!-- iPhone 6 / 6+ -->
-    <icon src="res/icon/ios/icon-60@3x.png"     gap:platform="ios"  width="180" height="180" />
+    <icon src="res/icon/ios/logo_badge.png"     gap:platform="ios"  width="180" height="180" />
     
     <!-- iPhone / iPod Touch  -->
     <icon src="res/icon/ios/icon-60.png"        gap:platform="ios"  width="60" height="60" />
